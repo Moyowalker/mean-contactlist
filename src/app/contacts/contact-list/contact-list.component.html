@@ -1,1 +1,8 @@
-<p>contact-list works!</p>
+<div class="col-md-5 col-md-offset-2">
+    <contact-details
+        [contact]="selectedContact"
+        [createHandler]="addContact"
+        [updateHandler]="updateContact"
+        [deleteHandler]="deleteContact">
+    </contact-details>
+</div>
