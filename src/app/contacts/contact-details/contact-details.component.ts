@@ -37,7 +37,7 @@ export class ContactDetailsComponent implements OnInit {
       })
     }
 
-    deleteContact(contact: Contact) {
+    deleteContact(contactId: String) {
       this.contactService.deleteContact(contactId).then((deletedContactId: String) => {
         this.deleteHandler(deletedContactId)
       })
